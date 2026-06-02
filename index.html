@@ -1,162 +1,473 @@
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pallavi Chendake — Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pallavi Chendake | Portfolio</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <div class="logo">Pallavi Chendake</div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contact">Contact</a>
-        <a class="cta" href="assets/PallaviChendake_resume.pdf" download>Download Resume</a>
-      </div>
-      <button class="nav-toggle" aria-label="Open navigation">☰</button>
-    </nav>
-    <div class="hero">
-      <div class="hero-left">
-        <h1>Pallavi <span>Chendake</span></h1>
-        <p class="lead">Information Science Engineering student • Java | Web Development | Databases</p>
-        <p>I build scalable web apps, serverless tools and hardware-interfacing systems. Seeking opportunities to contribute and grow.</p>
-        <div class="hero-ctas">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="assets/PallaviChendake_resume.pdf" download class="btn btn-outline">Download Resume</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="profile-card">
-          <img src="assets/profile.jpg" alt="Pallavi profile" class="profile-img">
-          <div class="profile-meta">
-            <h3>Pallavi Chendake</h3>
-            <p>Information Science — Gogte Institute of Technology</p>
-            <p class="contact-small">📧 pallavichendake134@gmail.com • 📞 +91 7892964398</p>
-            <div class="socials">
-              <a href="https://www.linkedin.com/in/pallavi-chendake" target="_blank">LinkedIn</a>
-              <a href="https://github.com/Pallavi1327" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <main>
-    <section id="projects" class="section container">
-      <h2>Projects</h2>
-      <div class="grid projects-grid">
-        <article class="card">
-          <h3>Uni Journey</h3>
-          <p>Spring Boot web app with Thymeleaf, Hibernate, MySQL and Docker. QR-based certificate verification.</p>
-          <p class="muted">Tech: Java, Spring Boot, MySQL, Docker, Tomcat</p>
-        </article>
-        <article class="card">
-          <h3>Hand Gesture Control</h3>
-          <p>Gesture-controlled LED system using Arduino UNO, Python, MediaPipe and PySerial for webcam-based finger detection.</p>
-          <p class="muted">Tech: Python, MediaPipe, Arduino</p>
-        </article>
-        <article class="card">
-          <h3>Scalable Feedback System</h3>
-          <p>RESTful microservices with Java, MongoDB, Docker Compose and Docker Swarm for orchestration and scaling.</p>
-          <p class="muted">Tech: Java, MongoDB, Docker</p>
-        </article>
-        <article class="card">
-          <h3>Automated Receipt Processing Tool</h3>
-          <p>Serverless receipt OCR using AWS Lambda + Textract, S3, DynamoDB and SNS for notifications.</p>
-          <p class="muted">Tech: AWS Lambda, Textract, S3, DynamoDB</p>
-        </article>
-      </div>
-    </section>
+<header class="site-header">
 
-    <section id="skills" class="section alt container">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div>
-          <h4>Programming</h4>
-          <p>Java, SQL, JavaScript, React.js</p>
-        </div>
-        <div>
-          <h4>Web & Databases</h4>
-          <p>HTML5, CSS3, MySQL, MongoDB</p>
-        </div>
-        <div>
-          <h4>Concepts</h4>
-          <p>DSA, System Design, Containerization</p>
-        </div>
-        <div>
-          <h4>Soft Skills</h4>
-          <p>Leadership, Time Management, Critical Thinking</p>
-        </div>
-      </div>
-    </section>
+<nav class="nav">
 
-    <section id="education" class="section container">
-      <h2>Education</h2>
-      <div class="timeline">
-        <div class="event">
-          <h4>B.E. in Information Science Engineering</h4>
-          <p>Gogte Institute of Technology, Belgaum — 2022–2026 (CGPA: 7.32)</p>
-        </div>
-        <div class="event">
-          <h4>Senior Secondary (XII), Science</h4>
-          <p>Vivekanand College, Kolhapur — 2020–2022 (65.83%)</p>
-        </div>
-        <div class="event">
-          <h4>Secondary (X)</h4>
-          <p>Usharaje High School — 2020 (91.80%)</p>
-        </div>
-      </div>
-    </section>
+<div class="logo">
+Pallavi Chendake
+</div>
 
-    <section id="achievements" class="section alt container">
-      <h2>Achievements & Certifications</h2>
-      <p class="muted">Tap images to enlarge. (Placeholders included — you can replace them later.)</p>
-      <div class="ach-grid">
-        <figure class="ach-card">
-          <img src="assets/achievement1.jpg" alt="Tantradnya achievement">
-          <figcaption>Tantradnya — Winner (2023)</figcaption>
-        </figure>
-        <figure class="ach-card">
-          <img src="assets/placeholder1.jpg" alt="placeholder">
-          <figcaption>HackToFuture — Qualified (2025)</figcaption>
-        </figure>
-        <figure class="ach-card">
-          <img src="assets/placeholder2.jpg" alt="placeholder">
-          <figcaption>Avalanche — Runner-up (2024)</figcaption>
-        </figure>
-        <figure class="ach-card">
-          <img src="assets/placeholder3.jpg" alt="placeholder">
-          <figcaption>Introduction to IoT — NPTEL (IIT Certified)</figcaption>
-        </figure>
-      </div>
-    </section>
+<div class="nav-links">
 
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <div>
-          <p><strong>Email</strong><br>pallavichendake134@gmail.com</p>
-          <p><strong>Phone</strong><br>+91 7892964398</p>
-        </div>
-        <div>
-          <p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/pallavi-chendake" target="_blank">linkedin.com/in/pallavi-chendake</a></p>
-          <p><strong>GitHub</strong><br><a href="https://github.com/Pallavi1327" target="_blank">github.com/Pallavi1327</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
 
-  <footer class="site-footer">
-    <p>Made with ❤️ • © Pallavi Chendake</p>
-  </footer>
+<a href="PallaviChendake_resume.pdf"
+download
+class="cta">
+Resume
+</a>
 
-  <script src="script.js"></script>
+</div>
+
+<button class="nav-toggle">
+☰
+</button>
+
+</nav>
+
+<div class="hero">
+
+<div class="hero-left">
+
+<div class="hero-badge">
+🚀 Available for Software Development Roles
+</div>
+
+<h1>
+Hi, I'm
+<span>Pallavi Chendake</span>
+</h1>
+
+<p class="lead">
+Information Science Engineer • Java Developer • Full Stack Enthusiast
+</p>
+
+<p>
+Passionate about building scalable web applications,
+cloud-native solutions and intelligent automation
+systems using Java, Spring Boot, Docker, AWS,
+MongoDB and modern web technologies.
+</p>
+
+<div class="hero-ctas">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+<a href="PallaviChendake_Resume.pdf"
+download
+class="btn btn-outline">
+Resume
+</a>
+
+<a href="https://github.com/Pallavi1327"
+target="_blank"
+class="btn btn-outline">
+GitHub
+</a>
+
+</div>
+
+<div class="tech-stack">
+
+<span>Java</span>
+<span>Spring Boot</span>
+<span>React</span>
+<span>MySQL</span>
+<span>MongoDB</span>
+<span>AWS</span>
+<span>Docker</span>
+<span>Salesforce</span>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="profile-card">
+
+<img
+src="ptf_p.jpg"
+alt="Pallavi Chendake"
+class="profile-img">
+
+<div class="profile-meta">
+
+<h3>Pallavi Chendake</h3>
+
+<p>
+Information Science Engineering
+</p>
+
+<p class="contact-small">
+📧 pallavichendake134@gmail.com
+</p>
+
+<p class="contact-small">
+📞 +91 7892964398
+</p>
+
+<div class="socials">
+
+<a href="https://www.linkedin.com/in/pallavi-chendake/"
+target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="https://github.com/Pallavi1327"
+target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="stats">
+
+<div>
+<h2>5+</h2>
+<p>Projects</p>
+</div>
+
+<div>
+<h2>2+</h2>
+<p>Internships</p>
+</div>
+
+<div>
+<h2>2026</h2>
+<p>Graduate</p>
+</div>
+
+</section>
+
+<main>
+
+<section id="projects" class="section container">
+
+<h2>Featured Projects</h2>
+
+<div class="grid projects-grid">
+
+<article class="card">
+
+<h3>UniJourney</h3>
+
+<p>
+Full-stack university management platform with
+QR-based certificate verification, student services,
+and Docker deployment.
+</p>
+
+<div class="project-tech">
+
+<span>Java</span>
+<span>Spring Boot</span>
+<span>MySQL</span>
+<span>Docker</span>
+
+</div>
+
+<a href="https://github.com/Pallavi1327"
+target="_blank"
+class="btn">
+View Project
+</a>
+
+</article>
+
+<article class="card">
+
+<h3>Hand Gesture Control System</h3>
+
+<p>
+Gesture-based appliance control using webcam,
+MediaPipe, Python and Arduino integration.
+</p>
+
+<div class="project-tech">
+
+<span>Python</span>
+<span>MediaPipe</span>
+<span>Arduino</span>
+
+</div>
+
+</article>
+
+<article class="card">
+
+<h3>Scalable Feedback System</h3>
+
+<p>
+Dockerized feedback management system built using
+Java REST APIs and MongoDB.
+</p>
+
+<div class="project-tech">
+
+<span>Java</span>
+<span>MongoDB</span>
+<span>Docker</span>
+
+</div>
+
+</article>
+
+<article class="card">
+
+<h3>Receipt Processing Tool</h3>
+
+<p>
+Serverless OCR pipeline using AWS Lambda,
+Textract, DynamoDB and SNS notifications.
+</p>
+
+<div class="project-tech">
+
+<span>AWS</span>
+<span>Lambda</span>
+<span>DynamoDB</span>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<section id="skills" class="section alt container">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div>
+<h4>Programming</h4>
+<p>Java, SQL, JavaScript, Python</p>
+</div>
+
+<div>
+<h4>Frameworks</h4>
+<p>Spring Boot, React.js</p>
+</div>
+
+<div>
+<h4>Database</h4>
+<p>MySQL, MongoDB</p>
+</div>
+
+<div>
+<h4>Cloud & Tools</h4>
+<p>AWS, Docker, Git, Salesforce</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="education" class="section container">
+
+<h2>Education</h2>
+
+<div class="timeline">
+
+<div class="event">
+
+<h4>
+B.E Information Science Engineering
+</h4>
+
+<p>
+Gogte Institute of Technology
+</p>
+
+<p>
+2022 – 2026 | CGPA: 6.94
+</p>
+
+</div>
+
+<div class="event">
+
+<h4>PUC Science</h4>
+
+<p>
+Vivekanand College
+</p>
+
+<p>
+65.83%
+</p>
+
+</div>
+
+<div class="event">
+
+<h4>SSLC</h4>
+
+<p>
+Usharaje High School
+</p>
+
+<p>
+91.80%
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="achievements" class="section alt container">
+
+<h2>Achievements & Certifications</h2>
+
+<div class="ach-grid">
+
+<figure class="ach-card">
+<img src="assets/achievement1.jpg">
+<figcaption>
+Tantradnya Winner 2023
+</figcaption>
+</figure>
+
+<figure class="ach-card">
+<img src="assets/placeholder1.jpg">
+<figcaption>
+HackToFuture Qualified
+</figcaption>
+</figure>
+
+<figure class="ach-card">
+<img src="assets/placeholder2.jpg">
+<figcaption>
+Avalanche Runner-Up
+</figcaption>
+</figure>
+
+<figure class="ach-card">
+<img src="assets/placeholder3.jpg">
+<figcaption>
+NPTEL - Introduction to IoT
+</figcaption>
+</figure>
+
+</div>
+
+</section>
+
+<section id="contact" class="section container">
+
+<h2>Contact Me</h2>
+
+<div class="contact-grid">
+
+<div>
+
+<h4>Email</h4>
+
+<p>
+pallavichendake134@gmail.com
+</p>
+
+</div>
+
+<div>
+
+<h4>Phone</h4>
+
+<p>
++91 7892964398
+</p>
+
+</div>
+
+<div>
+
+<h4>LinkedIn</h4>
+
+<a href="https://www.linkedin.com/in/pallavi-chendake/"
+target="_blank">
+
+Visit Profile
+
+</a>
+
+</div>
+
+<div>
+
+<h4>GitHub</h4>
+
+<a href="https://github.com/Pallavi1327"
+target="_blank">
+
+View Repositories
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+<p>
+© 2026 Pallavi Chendake • Built with HTML, CSS & JavaScript
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
+```
