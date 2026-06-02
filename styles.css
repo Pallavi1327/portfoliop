@@ -304,6 +304,27 @@ body{
   color:#6c63ff;
   font-weight:600;
 }
+.exp-project{
+    margin-top:15px;
+    padding:15px;
+    background:#f8f7ff;
+    border-left:4px solid #6c63ff;
+    border-radius:10px;
+}
+
+.exp-link{
+    display:inline-block;
+    margin-top:8px;
+    text-decoration:none;
+    color:#6c63ff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.exp-link:hover{
+    color:#4f46e5;
+    transform:translateX(5px);
+}
 @media(max-width:768px){
 
   .hero{
